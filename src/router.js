@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Landing from "./views/Landing.vue";
+import PastSimple from "./views/PastSimple.vue";
 
 Vue.use(Router);
 
@@ -10,6 +11,11 @@ export default new Router({
       path: "/",
       name: "landing",
       component: Landing
+    },
+    {
+      path: "/pastsimple",
+      name: "pastSimple",
+      component: PastSimple
     },
     {
       path: "/about",

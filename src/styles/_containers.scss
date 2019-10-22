@@ -1,0 +1,19 @@
+.container {
+  margin: 0 auto;
+
+  @include mediaXl {
+    max-width: 1170px;
+  }
+
+  @include mediaLg {
+    max-width: 960px;
+  }
+
+  @include mediaMd {
+    max-width: 720px;
+  }
+
+  @include mediaSm {
+    max-width: 540px;
+  }
+}
