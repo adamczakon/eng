@@ -11,13 +11,35 @@
         </span> + reszta zdania
       </span>
     </div>
+    <div class="excersise">
+      He
+      <input
+        v-model="userAnswer"
+        name="userAnswer"
+        v-on:blur="handleAnswerCheck"
+        class="input-excersise"
+      /> (play) volleyball yesterday.
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "pastSimple",
-  components: {}
+  components: {},
+  data() {
+    return {
+      correctAnswer: "played",
+      userAnswer: ""
+    };
+  },
+  methods: {
+    handleAnswerCheck() {
+      /* eslint-disable */
+      console.log(this);
+      this.correctAnswer === this.userAnswer && console.log("great");
+    }
+  }
 };
 </script>
 

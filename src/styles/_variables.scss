@@ -1,4 +1,6 @@
 $primary: rgb(77, 191, 28);
+$input-bg: #f2f3f7;
+$border-gray: #eee;
 
 @mixin mediaSm {
   @media screen and (max-width: 767px) {

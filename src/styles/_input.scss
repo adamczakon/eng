@@ -1,0 +1,9 @@
+.input-excersise {
+  background: $input-bg;
+  border: 1px solid $border-gray;
+  padding: 6px 12px;
+
+  &:focus {
+    outline: none;
+  }
+}
